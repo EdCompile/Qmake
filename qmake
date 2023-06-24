@@ -1,0 +1,13 @@
+#!/bin/bash
+echo 'Qmake was just created so expect minor errors and it still works ;)'
+read filesys
+read -p "(Disk Type)? " read disk
+read -p  "(Space Given)? " read diskspace
+read -p  "File System (Has To be Any Linux or Sun filesystem)? " filesys   
+echo "Creating Disk"
+mkdir .disk
+echo  $diskspace
+mount .disk
+echo "Disk Type of ${disk}"
+echo "s: Pushed All"
+echo "fs:       -> ${filesys}"

@@ -1,0 +1,16 @@
+#!/bin/bash                                                                                                                                                                                                      
+echo 'Qmake was just created so expect minor errors and it still works ;)'
+echo '* USING PULLED VERSION, IN SCRIPT YOU WILL HAVE TO CREATE A IDENTIFIER TO LATER OPEN THIS TOOL.'
+read filesys 
+read ident
+read -p "(identifier): " ident 
+read -p "(Disk Type)? " read disk                                                                                                                                                                               
+read -p  "(Space Given)? " read diskspace                                                                                                                                                                        
+read -p  "File System (Has To be Any Linux or Sun filesystem)? " filesys                                                                         
+echo  $diskspace                                                                           
+echo "Disk Type of ${disk}"                                                                                                                                                                                      
+echo "s: Pushed All"                                                                                                                                                                                             
+echo "fs:       -> ${filesys}"
+echo "i:  -> ${ident}"
+mkdir Qmake-Qemu-disks
+touch alldisks.qcow2
