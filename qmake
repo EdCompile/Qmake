@@ -6,6 +6,7 @@ read -p  "(Space Given)? " read diskspace
 read -p  "File System (Has To be Any Linux or Sun filesystem)? " filesys   
 echo "Creating Disk"
 mkdir .disk
+mount $disk
 echo  $diskspace
 mount .disk
 echo "Disk Type of ${disk}"
