@@ -18,7 +18,7 @@ ______________________________________________
 3. Install ZIP
 4. cd into 'Qmake-qemu-lib'
 5. set ENV_QEMU to PATH and PATH_LIB
-6. make permissions for ENV_QEMU to have accsess to Qemu
+6. make permissions for ENV_QEMU to have access to Qemu
 7. type command 'touch e.sol'
 8. nano e.sol
 9. in the file, type 'PATH_LIB_INCLUDE: ENV_QEMU, qemu'
